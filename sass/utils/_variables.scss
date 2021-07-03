@@ -1,0 +1,16 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --white-background-color: #e5e5e5;
+  --dark-background-color: #2f303a;
+  --grey-background-color: #f5f4fa;
+  --time-animation: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --time-animation-background: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+.body {
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}

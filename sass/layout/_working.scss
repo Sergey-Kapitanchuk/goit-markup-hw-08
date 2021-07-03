@@ -1,0 +1,41 @@
+.working {
+  &__headline {
+    @extend %text;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__list {
+    @extend %justify;
+  }
+  &__img {
+    position: relative;
+  }
+  &__img:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__meta {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__text {
+    color: var(--white-color);
+    @extend %inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 27px;
+  }
+}

@@ -1,0 +1,61 @@
+.portfolio {
+  &__masters {
+    @extend %justify;
+    text-align: center;
+  }
+  &__people:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__people {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
+  }
+}
+
+.portfolio {
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__social {
+    @extend %justify;
+    text-align: center;
+  }
+  &__subtitle {
+    @extend %text;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: var(--title-text-color);
+    @extend %inherit;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+  }
+}
+
+.portfolio__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  margin-top: 16px;
+  margin-right: 10px;
+  padding-top: 12px;
+  transition: var(--time-animation-background),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+    transition: var(--time-animation-background),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
