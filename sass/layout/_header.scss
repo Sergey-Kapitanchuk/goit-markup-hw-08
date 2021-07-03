@@ -1,7 +1,12 @@
 .header {
   border-bottom: 1px solid #ececec;
   .container {
-    @extend %flex-align;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 480px) {
     justify-content: space-between;
   }
 }

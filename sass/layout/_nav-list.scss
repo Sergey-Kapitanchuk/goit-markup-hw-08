@@ -13,6 +13,9 @@
     height: 4px;
     bottom: -1px;
   }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .link {
@@ -24,6 +27,7 @@
 }
 
 .aside {
+  margin-left: auto;
   &__icon {
     margin-right: 10px;
     fill: currentColor;
@@ -33,6 +37,9 @@
   }
   &__mail:not(:last-child) {
     margin-right: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -48,13 +55,11 @@
 .list {
   &.nav__list,
   &.aside {
-    @extend %flex-align;
     font-style: normal;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.142;
     letter-spacing: 0.02em;
-    justify-content: space-between;
     transition: var(--time-animation);
   }
   &.nav__list {
