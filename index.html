@@ -21,11 +21,12 @@
 
         <nav class="nav">
           <ul class="list nav__list">
-            <li><a href="./index.html" class="link nav--current">Студия</a></li>
-            <li><a href="./portofolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li><a href="./index.html" class="link nav__link--current">Студия</a></li>
+            <li><a href="./portofolio.html" class="link nav__link">Портфолио</a></li>
+            <li><a href="" class="link nav__link">Контакты</a></li>
           </ul>
         </nav>
+
         <ul class="list aside">
           <li class="aside__mail">
             <a href="mailto:info@devstudio.com" class="link aside__link"
@@ -38,24 +39,24 @@
                 <use href="./images/logo/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
-
+        <div class="mobil">
           <button type="button" class="menu__open">
             <svg width="40px" height="40px"><use href="./images/logo/icons.svg#icon-menu-open"></use></svg>
           </button>
-          <div class="mobile__nav">
+          <div class="mobile__nav is-hidden">
             <div class="container">
               <button type="button" class="menu__close">
                 <svg width="40px" height="40px"><use href="./images/logo/icons.svg#icon-close"></use></svg>
               </button>
               <nav>
                 <ul class="menu list">
-                  <li class="mobile-menu__item">
+                  <li class="menu__item">
                     <a href="" class="menu__link">Студия</a>
                   </li>
                   <li class="menu__item">
                     <a href="" class="menu__link">Портфолио</a>
                   </li>
-                  <li class="-menu__item">
+                  <li class="menu__item">
                     <a href="" class="menu__link">контакты</a>
                   </li>
                 </ul>
@@ -65,7 +66,7 @@
                   <li class="contacts__item">
                     <a href="" class="menu__tell">+38 096 111 11 11</a>
                   </li>
-                  <li class="mobile-contacts__item">
+                  <li class="contacts__item">
                     <a href="" class="menu__mail">info@devstudio.com</a>
                   </li>
           
@@ -89,7 +90,7 @@
             </div>
           
           </div>
-
+        </div>
       </div>
     </header>
 
@@ -97,7 +98,7 @@
     <main>
       <!--Герой-->
 
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />для вашего бизнеса
@@ -106,12 +107,12 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--Наши принципы-->
-       <!-- <section class="section principles">
+      <section class="section principles">
         <div class="container">
-           <h2 class="title">наши принципы</h2>
+           <!-- <h2 class="title">наши принципы</h2> -->
 
           <ul class="principles__list">
             <li class="principles__info">
@@ -164,17 +165,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--В работе-->
-      <!-- <section class="section working">
+      <section class="section working">
         <div class="container">
           <h2 class="headline">Чем мы занимаемся</h2>
 
           <ul class="working__list">
             <li class="working__img">
               <img
-                src="./images/img1.jpg"
+                src="./images/img1-min.jpg"
                 alt="работает с клавиатуры на планшете"
                 width="370"
               />
@@ -184,7 +185,7 @@
             </li>
             <li class="working__img">
               <img
-                src="./images/img2.jpg"
+                src="./images/img2-min.jpg"
                 alt="работает над дизайном приложения"
                 width="370"
               />
@@ -194,7 +195,7 @@
             </li>
             <li class="working__img">
               <img
-                src="./images/img3.jpg"
+                src="./images/img3-min.jpg"
                 alt="работает с планшетом"
                 width="370"
               />
@@ -204,20 +205,24 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Портфолио-->
-      <!-- <section class="section portfolio">
+      <section class="section portfolio">
         <div class="container">
           <h2 class="headline">Наша команда</h2>
 
           <ul class="portfolio__masters">
             <li class="portfolio__people">
-              <img
-                src="./images/photo1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/photo1-min.jpg 1x, ./images/photo1-2x-min.jpg 2x" media="(min-width: 1200px)">
+              
+                <source srcset="./images/photo1-desktop-min.jpg 1x, ./photo1-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
+              
+                <source srcset="./images/photo1-mobil-min.jpg 1x, ./photo1-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+
+                <img src="./images/photo1-min.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="portfolio__info">
                 <h3 class="portfolio__subtitle">Игорь Демьяненко</h3>
                 <p class="portfolio__text">Product Designer</p>
@@ -251,11 +256,15 @@
               </div>
             </li>
             <li class="portfolio__people">
-              <img
-                src="./images/photo2.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/photo2-min.jpg 1x, ./images/photo2-2x-min.jpg 2x" media="(min-width: 1200px)">
+              
+                <source srcset="./images/photo2-desktop-min.jpg 1x, ./photo2-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
+              
+                <source srcset="./images/photo2-mobil-min.jpg 1x, ./photo2-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+              
+                <img src="./images/photo2-min.jpg" alt="Ольга Репина" width="270" />
+              </picture>
               <div class="portfolio__info">
                 <h3 class="portfolio__subtitle">Ольга Репина</h3>
                 <p class="portfolio__text">Frontend Developer</p>
@@ -288,11 +297,15 @@
               </div>
             </li>
             <li class="portfolio__people">
-              <img
-                src="./images/photo3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/photo3-min.jpg 1x, ./images/photo3-2x-min.jpg 2x" media="(min-width: 1200px)">
+              
+                <source srcset="./images/photo3-desktop-min.jpg 1x, ./photo3-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
+              
+                <source srcset="./images/photo3-mobil-min.jpg 1x, ./photo3-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+              
+                <img src="./images/photo3-min.jpg" alt="Николай Тарасов" width="270" />
+              </picture>
               <div class="portfolio__info">
                 <h3 class="portfolio__subtitle">Николай Тарасов</h3>
                 <p class="portfolio__text">Marketing</p>
@@ -326,11 +339,15 @@
               </div>
             </li>
             <li class="portfolio__people">
-              <img
-                src="./images/photo4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/photo4-min.jpg 1x, ./images/photo4-2x-min.jpg 2x" media="(min-width: 1200px)">
+              
+                <source srcset="./images/photo4-desktop-min.jpg 1x, ./photo4-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
+              
+                <source srcset="./images/photo1-mobil-min.jpg 1x, ./photo4-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+              
+                <img src="./images/photo4-min.jpg" alt="Михаил Ермаков" width="270" />
+              </picture>
               <div class="portfolio__info">
                 <h3 class="portfolio__subtitle">Михаил Ермаков</h3>
                 <p class="portfolio__text">UI Designer</p>
@@ -368,7 +385,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
       <!-- <section class="section client">
@@ -481,7 +498,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="modal is-hidden" id="modal" data-modal>
       <div class="modal__content" id="modal-content">
@@ -560,8 +577,9 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

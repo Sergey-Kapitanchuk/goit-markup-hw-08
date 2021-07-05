@@ -1,6 +1,8 @@
 .mobile__nav {
   font-weight: 500;
   letter-spacing: 0.02em;
+  display: flex;
+
   & {
     position: absolute;
     background-color: var(--white-color);
@@ -12,9 +14,26 @@
     height: 100vh;
   }
   .container {
-    position: relative;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-top: -32px;
+  }
+  @media screen and (min-width: 430px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.menu {
+  &__item {
+    margin-top: 32px;
+  }
+}
+.contacts {
+  &__item {
+    margin-bottom: 32px;
   }
 }
 .menu {
@@ -49,14 +68,37 @@
   }
   &__social {
     display: flex;
+    margin-top: 64px;
   }
-  // &__nav {
-  //   margin-top: auto;
-  // }
 }
-.social__link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.222;
-  color: var(--accent-color);
+.social {
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    color: var(--accent-color);
+  }
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  &__item:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .mobil {
+    display: none;
+  }
+}
+
+.menu {
+  &__close:hover,
+  &__close:focus,
+  &__link:hover,
+  &__link:focus,
+  &__open:hover,
+  &__open:focus {
+    color: var(--accent-color);
+  }
 }

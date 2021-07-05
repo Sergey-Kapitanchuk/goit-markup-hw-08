@@ -1,16 +1,28 @@
 .principles {
   &__list {
-    @extend %justify;
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
   }
-  &__info:not(:last-child) {
-    margin-right: 30px;
+  &__info {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
+      margin-left: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 120px) / 4);
+    }
   }
   &__icon--decor {
     @extend %flex-align;
     background: var(--grey-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    width: 270px;
+    width: 100%;
     height: 120px;
     justify-content: center;
   }
@@ -19,16 +31,20 @@
     font-weight: bold;
     line-height: 1.142;
     text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     color: var(--title-text-color);
     font-weight: normal;
     line-height: 1.714;
-    padding-top: 10px;
+    margin-top: 10px;
   }
   &__subtitle,
   &__text {
-    width: 270px;
+    width: 100%;
     letter-spacing: 0.03em;
     font-size: 14px;
     @extend %inherit;
