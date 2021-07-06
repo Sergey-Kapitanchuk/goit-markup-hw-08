@@ -520,7 +520,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .logo__header {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -703,7 +703,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .aside__mail:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -728,7 +728,7 @@ img {
   width: 294px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .list.nav__list {
     display: flex;
     justify-content: space-between;
@@ -739,7 +739,7 @@ img {
   color: var(--title-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -889,7 +889,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .working {
     display: none;
   }

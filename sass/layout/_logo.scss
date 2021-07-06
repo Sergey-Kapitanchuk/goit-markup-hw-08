@@ -14,7 +14,7 @@
     color: var(--accent-color);
   }
   &__header {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       padding-top: 26px;
       padding-bottom: 26px;
       margin-right: 88px;
