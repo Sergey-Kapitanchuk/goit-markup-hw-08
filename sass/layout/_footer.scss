@@ -29,20 +29,37 @@
   padding-top: 60px;
   padding-bottom: 60px;
   &__container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
   }
   &__form {
-    margin-left: 93px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
   &__mail:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
 
 .footer {
   &__social {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+      }
+    }
   }
   &__headline {
     @extend %inherit;
@@ -53,27 +70,49 @@
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   &__list {
     display: flex;
+    justify-content: center;
   }
   &__row:not(:last-child) {
     margin-right: 10px;
+  }
+  &__contact {
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
 }
 
 .form {
   &__subscribe {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   &__input {
-    margin-right: 12px;
+    // margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
+    width: 100%;
     background-color: var(--dark-background-color);
     padding: 15px 16px;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+    }
   }
   &__icon {
     margin-left: 10px;

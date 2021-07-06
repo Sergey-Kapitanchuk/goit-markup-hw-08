@@ -17,7 +17,7 @@
     <!--Активные ссылки по странице "Голова"-->
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
+        <a href="./index.html" class="logo logo__header"><span class="web">Web</span>Studio</a>
 
         <nav class="nav">
           <ul class="list nav__list">
@@ -50,12 +50,12 @@
               </button>
               <nav>
                 <ul class="menu list">
-                  <li class="menu__item">
-                    <a href="" class="menu__link">Студия</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="" class="menu__link">Портфолио</a>
-                  </li>
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link">Студия</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./portofolio.html" class="menu__link">Портфолио</a>
+                </li>
                   <li class="menu__item">
                     <a href="" class="menu__link">контакты</a>
                   </li>
@@ -216,12 +216,9 @@
             <li class="portfolio__people">
               <picture>
                 <source srcset="./images/photo1-min.jpg 1x, ./images/photo1-2x-min.jpg 2x" media="(min-width: 1200px)">
-              
                 <source srcset="./images/photo1-desktop-min.jpg 1x, ./photo1-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
-              
-                <source srcset="./images/photo1-mobil-min.jpg 1x, ./photo1-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
-
-                <img src="./images/photo1-min.jpg" alt="Игорь Демьяненко" />
+                <source srcset="./images/photo1-mobil-min.jpg 1x, ./photo1-mobil-2x-min.jpg 2x" media="(min-width: 320px)">
+                 <img src="./images/photo1-min.jpg" alt="Игорь Демьяненко" width="270" />
               </picture>
               <div class="portfolio__info">
                 <h3 class="portfolio__subtitle">Игорь Демьяненко</h3>
@@ -261,7 +258,7 @@
               
                 <source srcset="./images/photo2-desktop-min.jpg 1x, ./photo2-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
               
-                <source srcset="./images/photo2-mobil-min.jpg 1x, ./photo2-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+                <source srcset="./images/photo2-mobil-min.jpg 1x, ./photo2-mobil-2x-min.jpg 2x" media="(min-width: 320px)">
               
                 <img src="./images/photo2-min.jpg" alt="Ольга Репина" width="270" />
               </picture>
@@ -302,7 +299,7 @@
               
                 <source srcset="./images/photo3-desktop-min.jpg 1x, ./photo3-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
               
-                <source srcset="./images/photo3-mobil-min.jpg 1x, ./photo3-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+                <source srcset="./images/photo3-mobil-min.jpg 1x, ./photo3-mobil-2x-min.jpg 2x" media="(min-width: 320px)">
               
                 <img src="./images/photo3-min.jpg" alt="Николай Тарасов" width="270" />
               </picture>
@@ -344,7 +341,7 @@
               
                 <source srcset="./images/photo4-desktop-min.jpg 1x, ./photo4-desktop-2x-min.jpg 2x" media="(min-width: 768px)">
               
-                <source srcset="./images/photo1-mobil-min.jpg 1x, ./photo4-mobil-2x-min.jpg 2x" media="(min-width: 480px)">
+                <source srcset="./images/photo1-mobil-min.jpg 1x, ./photo4-mobil-2x-min.jpg 2x" media="(min-width: 320px)">
               
                 <img src="./images/photo4-min.jpg" alt="Михаил Ермаков" width="270" />
               </picture>
@@ -388,8 +385,8 @@
       </section>
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="section client">
-        <div class="conteiner">
+      <section class="section client">
+        <div class="container">
           <h2 class="headline">Постоянные клиенты</h2>
           <ul class="client__list">
             <li class="client__icon">
@@ -430,13 +427,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--Подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__contact">
           <a href="./index.html" class="logo logo__footer"
             ><span class="web">Web</span>Studio</a>
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
@@ -498,7 +495,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="modal is-hidden" id="modal" data-modal>
       <div class="modal__content" id="modal-content">
